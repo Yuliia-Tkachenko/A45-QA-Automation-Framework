@@ -17,7 +17,11 @@ public class LoginTests extends BaseTest {
         WebDriver driver = new ChromeDriver(options);
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
+<<<<<<< Updated upstream
         String url = "https://testpro.io/";
+=======
+        String url = "https://bbb.testpro.io/";
+>>>>>>> Stashed changes
         driver.get(url);
         Assert.assertEquals(driver.getCurrentUrl(), url);
         driver.quit();
