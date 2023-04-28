@@ -30,7 +30,7 @@ public class LoginTests extends BaseTest {
 
     @Test (enabled = true, priority = 1, description = "Login with valid email and valid password")
     public void loginValidEmailPasswordTest(){
-        provideEmail("demo@class.com");
+        provideEmail("yuliia.tkachenko@testpro.i0");
         providePassword("te$t$tudent");
         clickSubmit();
         isAvatarDisplayed();
@@ -38,7 +38,7 @@ public class LoginTests extends BaseTest {
 
     @Test (enabled = true, priority = 3, description = "Login with valid email and empty password")
     public static void loginValidEmailEmptyPasswordTest() {
-        provideEmail("demo@class.com");
+        provideEmail("yuliia.tkachenko@testpro.iog");
         providePassword("");
         clickSubmit();
 
