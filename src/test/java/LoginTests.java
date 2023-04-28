@@ -1,9 +1,21 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 public class LoginTests extends BaseTest {
+
+    @DataProvider(name="IncorrectLoginData")
+    public static Object [][] getDataFromDataProviders(){
+
+        return new Object[][]{
+                {"invalid@mail.com", "invalidPass"},
+                {"yuliia.tkachenko@testpro.io", ""},
+                {"", ""}
+        };
+    }
+
 
 
     @Test (dataProvider = "IncorrectLoginData", dataProviderClass = BaseTest.class, enabled = true, priority = 0, description = "Login with invalid email and valid password")
