@@ -19,7 +19,7 @@ public class HomeWork19 extends BaseTest{
     }
 
         public void openPlayList(){
-            WebElement emptyPlaylist = driver.findElement(By.xpath("//a[@class=\"active\"]"));
+            WebElement emptyPlaylist = driver.findElement(By.cssSelector("#playlists > ul > li:nth-child(3) > a"));
             emptyPlaylist.click();
 
         }
